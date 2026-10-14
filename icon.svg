@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160">
+  <!-- D 圆形对勾徽章：基座 v1 + 绿圆(r24, 圆心 102,42)叠文档右上角,白色圆头对勾(stroke 6)表达「已拷贝」反馈 -->
+  <rect x="22" y="48" width="104" height="104" rx="20" fill="#3575F0"/>
+  <rect x="38" y="75" width="52" height="10" rx="5" fill="#FFFFFF"/>
+  <rect x="50" y="95" width="52" height="10" rx="5" fill="#FFFFFF"/>
+  <rect x="62" y="115" width="52" height="10" rx="5" fill="#FFFFFF"/>
+  <circle cx="102" cy="42" r="24" fill="#34C759"/>
+  <path d="M 90 43 L 99 52 L 115 34" fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
