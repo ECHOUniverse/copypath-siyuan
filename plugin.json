@@ -1,0 +1,48 @@
+{
+  "name": "copy-path",
+  "author": "hanxu",
+  "url": "https://github.com/hanxu/copypath-siyuan",
+  "version": "0.1.0",
+  "minAppVersion": "3.0.0",
+  "kernels": [
+    "windows",
+    "linux",
+    "darwin",
+    "ios",
+    "android",
+    "harmony",
+    "docker",
+    "all"
+  ],
+  "backends": [
+    "windows",
+    "linux",
+    "darwin",
+    "ios",
+    "android",
+    "harmony",
+    "docker",
+    "all"
+  ],
+  "frontends": [
+    "desktop",
+    "mobile",
+    "browser-desktop",
+    "browser-mobile",
+    "desktop-window",
+    "all"
+  ],
+  "disabledInPublish": false,
+  "displayName": {
+    "default": "Copy Path",
+    "zh_CN": "拷贝路径"
+  },
+  "description": {
+    "default": "Copy the full path of a document (/notebook/parent/doc) to the clipboard from the doc tree context menu.",
+    "zh_CN": "在文档树右键菜单中把文档完整路径（/笔记本名/父文档/文档名）拷贝到剪贴板。"
+  },
+  "readme": {
+    "default": "README.md"
+  },
+  "icon": "icon.png"
+}
