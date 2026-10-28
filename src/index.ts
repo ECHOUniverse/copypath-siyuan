@@ -1,4 +1,8 @@
-import {fetchSyncPost, Plugin, showMessage} from "siyuan";
+import {
+    fetchSyncPost,
+    Plugin,
+    showMessage,
+} from "siyuan";
 import type {IEventBusMap} from "siyuan";
 
 /**
@@ -17,12 +21,19 @@ export default class CopyPathPlugin extends Plugin {
             return;
         }
         const doc = items[0];
-        // 插件菜单项会被思源统一收纳进「插件 ▸」子菜单，此为预期行为。
-        menu.addItem({
+        // detail.menu 指向「插件」子菜单，向其添加的项会被思源统一收纳进「插件 ▸」二级项；
+        // 同步回调中 window.siyuan.menus.menu 才是当前完整菜单，仅在其不可用时回退到 detail.menu。
+        const menuItem = {
             icon: "iconCopy",
             label: String(this.i18n.copyPath ?? "拷贝路径"),
             click: () => this.copyDocPath(doc.id, doc.notebookId),
-        });
+        };
+        const currentMenu = window.siyuan.menus?.menu;
+        if (currentMenu) {
+            currentMenu.addItem(menuItem);
+        } else {
+            menu.addItem(menuItem);
+        }
     };
 
     onload() {
